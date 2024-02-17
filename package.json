@@ -53,5 +53,8 @@
     "tsc": "tsc --noEmit",
     "clean": "rimraf .parcel-cache dist gitBuild",
     "test": "mocha --recursive tests/**/*.spec.ts tests/**/**/*.spec.ts"
+  },
+  "optionalDependencies": {
+    "@parcel/watcher-linux-x64-glibc": "^2.4.0"
   }
 }
