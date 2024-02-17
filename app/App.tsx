@@ -1,5 +1,5 @@
-import React from 'react';
-import getRandomClock from './clocks';
+import React from "react";
+import getRandomClock from "./clocks";
 
 export default function App() {
     const Clock = getRandomClock();

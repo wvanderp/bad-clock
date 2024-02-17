@@ -1,7 +1,7 @@
-import NormalClock from './clocks/normal';
+import NormalClock from "./clocks/normal";
 
 const clocks = [
-    NormalClock
+    NormalClock,
 ];
 
 const getRandomClock = () => clocks[Math.floor(Math.random() * clocks.length)];
