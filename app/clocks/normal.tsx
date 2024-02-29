@@ -1,10 +1,14 @@
 import React from "react";
-import ClockProps from "../types/clockProps";
+import BaseClock from "../BaseClock";
 
-export default function NormalClock(props: ClockProps) {
-    return (
-        <div id={"clock"}>
-            {props.time.toLocaleTimeString()}
-        </div>
-    );
+export default class NormalClock extends BaseClock {
+    public canShowTime(time: Date): boolean {
+        return true
+    }
+    public render(time: Date): React.ReactElement {
+        return (<div>
+            {time.toISOString()}
+        </div>);
+    }
+
 }
